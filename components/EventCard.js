@@ -28,7 +28,7 @@ function LightenDarkenColor(col, amt) {
 }
 
 const Block = styled(Box)`
-  background-color: ${theme.colors.blue};
+  background-color: ${theme.colors.primary};
   border-radius: ${theme.radius};
   position: absolute;
   left: 4em;
@@ -42,14 +42,14 @@ const Block = styled(Box)`
     props.flavor == 'closing' && `background-color: ${theme.colors.red} !important;`}
   ${props =>
     props.flavor == 'food' &&
-    `background-color: ${theme.colors.orange} !important;`}
+    `background-color: ${theme.colors.primaryDark} !important;`}
   
   ${props => (props.onClick === null) ? null :
   css`
     cursor: pointer;
     transition-duration: 0.25s;
     &:hover {
-      // background: ${LightenDarkenColor(theme.colors.blue, -10)};
+      // background: ${LightenDarkenColor(theme.colors.blue, -20)};
       filter: darken(.5);
     }
   `};
@@ -72,7 +72,7 @@ const toSpecialTime = hhmmap => {
   result += hours * 60
   result += minutes
 
-  result -= 9 * 60 // cal starts at 9 am
+  result -= 7 * 60 // cal starts at 7 am
   result = result / 30 // each "tick" in the calendar is 30 minutes
 
   return result

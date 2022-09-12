@@ -18,8 +18,8 @@ const theme = {
     green: '#33d6a6',
     cyan: '#5bc0de',
     blue: '#338eda',
-    primary: '#EEAA48',
-    primaryDark: '#F0984A'
+    primary: '#2433ed',
+    primaryDark: '#6930c3'
   }
 }
 

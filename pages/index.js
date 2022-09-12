@@ -11,17 +11,14 @@ const FlagshipHeading = styled(Heading.h1)`
 `
 
 export default () => (
-  <>
-    <Container maxWidth={32}>
-      <FlagshipHeading color="white" align="center" my={5} fontSize={[6, 8]}>
-        Flagship<br />
-        <strong><Text.span fontSize={[8, 9]}>Route</Text.span></strong>
-      </FlagshipHeading>
-    </Container>
-    <Schedule />
-    <Container maxWidth={32}>
-      <Image src="/static/ship.svg" alt="Flagship artwork" />
-    </Container>
-    <Section bg="#5295D5" style={{minHeight: '12em'}} />
-  </>
+	<>
+		<Container maxWidth={42}>
+			<FlagshipHeading color="white" align="center" my={5} fontSize={[6, 8]}>
+				Tri-Valley Hacks<br />
+				<strong><Text.span fontSize={[8, 9]}>Schedule</Text.span></strong>
+			</FlagshipHeading>
+		</Container>
+		<Schedule />
+    <Section />
+	</>
 )

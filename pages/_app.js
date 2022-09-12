@@ -13,7 +13,7 @@ export default class extends App {
           <title>Schedule – Flagship Summit</title>
           <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet" />
           {/* <style children={`body{background:${cx('darker')};}`} /> */}
-          <style children={`body{background:${theme.cx('#EEAA48')};background-image:${theme.gradient('#EEAA48','#F0984A')};}`} />
+          <style children={`body{background:${theme.cx('#2433ed')};background-image:${theme.gradient('#2433ed','#6930c3')};}`} />
         </Head>
         <ThemeProvider theme={theme} webfonts>
           <Component {...pageProps} />
